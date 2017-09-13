@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+	    <title>This is a title</title>
+	    <style>
+	        #main-page{
+                /*background-image:url(Images/518164-backgrounds.jpg);*/
+	            /*background-size:cover;*/
+	            margin:30px;
+	            width:1100px;
+	            height:100%;
+	        }
+	        #video-text-box{
+	            margin-left:40px;
+	        }
+	        #video-box1{
+	        	position:fixed;
+	        	margin-left:30px;
+	        	-webkit-filter:opacity(.3);
+	        }	
+	        #video-box2{
+	        	position:fixed;
+	        	margin-left:30px;
+	        	-webkit-filter:opacity(.6);	
+	        }
+	        #video-box3{
+	        	position:fixed;
+	        	margin-left:30px;
+	        	-webkit-filter:opacity(.3);		
+	        }
+	        #text-box{
+	        	width:700px;
+				text-align:justify;
+	        }
+	    </style>
+	</head>
+	<body>
+	    <div id="main-page">
+    	    <div id="video-text-box">
+    	        <h2>This is a video</h2>
+    	        
+    	        <video id="video-box1" controls="controls" autoplay>
+    	        	<source src="Video/MP4_Bunny.mp4#t0.3" type="video/mp4"/>
+    	        </video>
+    	        
+    	        <video id="video-box2" controls="controls" autoplay>
+    	        	<source src="Video/MP4_Bunny.mp4#t0.6" type="video/mp4"/>
+    	        </video>
+    	        
+    	        <video id="video-box3" controls="controls" autoplay>
+    	        	<source src="Video/MP4_Bunny.mp4" type="video/mp4"/>
+    	        </video>
+    	        
+    	    </div>
+	    </div>   
+	</body>
+</html>
