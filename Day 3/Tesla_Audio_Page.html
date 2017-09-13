@@ -4,57 +4,71 @@
 	    <title></title>
 	    <style>
 		    #main-page{
-		    	margin-left:30px;
+		    	position:fixed;
+		    	width:100%;
 		    	height:900px;
-		    	/*width:900px;*/
-		    	background:linear-gradient(to bottom, #F0C27B, #4B1248);
+		    	background-image:url("Tesla_Images/hyperloop-one.jpeg");
+		    	background-size:cover;
 		    }
-		    #header1{
+		    #main-header{
+		    	position:fixed;
+		    	left:500px;
+		    	top:20px;
 		    	text-align:center;
 		    	font-family: "Open Sans";
 				font-size: 34px;
+				color:white;
 		    }
-		    #line1{
-		    	width:400px;
+		    #photo-box{
+		    	position:fixed;
+		    	top:130px;
+		    	left:400px;
 		    }
-		    #photo1-box{
-		    	width:300px;
-		    	margin-left:500px;
-		    	margin-top:100px;
-		    	/*background:linear-gradient(to bottom, #F0C27B, #4B1248);*/
+		    #photo{
+		    	width:160px;
+		    	border-radius:5%;
 		    }
-		    #photo1{
-		    	width:260px;
+		    #text-box{
+		    	position:fixed;
+		    	top:120px;
+		    	left:600px;
+		    	width:500px;
 		    }
-		    #header2{
-		    	/*text-align:center;*/
+		    #text-header{
 		    	font-family: "Open Sans";
 				font-size: 24px;
 				color:white;
 		    }
-		    #para1{
+		    #text-para{
 		    	color:white;
+		    	text-align:justify;
 		    }
-		    #audio1{
-			
+		    #text-audio{
+		    	position:fixed;
+		    	top:330px;
+		    	left:600px;
 		    }
 		</style>
 	</head>
 	<body>
 		<div id="main-page">
-			<h1 id="header1">After Tesla and Space X, what next?</h1>
-			<hr id="line1"/>
-			<div id="photo1-box">
-				<img id="photo1" src="Tesla_Images/Elon_Musk.jpg"/>
-				<audio id="audio1" controls="controls" autoplay>
-	    	    	<source src="Tesla_Audio/ElonMusk_2017.mp3" type="audio/mp3"/>
-	    	    </audio>
-	    	    <h1 id="header2">Elon Musk</h1>
-	    	    <p id="para1">
+			<h1 id="main-header">After Tesla Cars and Space X, what next?</h1>
+			
+			<div id="photo-box">
+				<img id="photo" src="Tesla_Images/Elon_Musk.jpg"/>
+				<audio id="text-audio" controls="controls" autoplay>
+						<source src="Tesla_Audio/ElonMusk_2017.mp3" type="audio/mp3"/>
+			    </audio>
+		    </div>
+			
+			<div id="text-box">
+	    	    <h1 id="text-header">Elon Musk And The Boring Company</h1>
+	    	    <p id="text-para">
 	    	    	Elon Musk has started the building revolution for a new train system.
 					Dubbed Hyperloop, it will allow you to get from London to Edinburgh or LA to San Francisco in under 30 minutes. But what is it and how does it work? Good questions. Musk has likened it to a vacuum tube system in a building used to move documents from place to place. Confused? No worries. Here's everything you need to know about the futuristic train coming from the founder of Tesla and SpaceX.
 	    	    </p>
 			</div>
+			
 		</div>
 	</body>
 </html>
