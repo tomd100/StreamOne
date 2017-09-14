@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transitions</title>
+    <style>
+    
+    .title {
+        font-size: 30px;
+        text-align: center;
+    } 
+       
+    h1 {
+    text-align: center;
+    font-family:"Open Sans";
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	margin-top: 50px;
+    } 
+    
+    h2 {
+    text-align: center;
+    font-family: "Open Sans";
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px; 
+	margin-top: 40px;
+    }
+        
+    #line {
+    border: none;
+    height: 1px;
+    color: #333; 
+    background-color: black;
+    width: 300px;
+    }    
+    
+    .box {
+    background-color: black;
+    width:250px;
+    height:150px;
+    border: 0px solid black;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    padding-top: 40px;
+    float: left;
+    }
+    
+    #emissions:hover{
+	background: none;
+	background-color: white;
+	transition: 1s, ease-in-out;
+	color: black;
+	border: 2px solid black;
+    }
+	
+	#emissions:hover .title span {
+    display: none;
+    }
+    
+    #emissions:hover .title:after {
+    content: "No Tailpipe Emissions";
+    }
+	
+	#range:hover{
+	background: none;
+	background-color: white;
+	transition: 1s, ease-in-out;
+	color: black;
+	border: 2px solid black;
+    }
+	
+	#range:hover .title span {
+    display: none;
+    }
+    
+    #range:hover .title:after {
+    content: "Utility Company";
+    }
+    
+    #charge:hover{
+	background: none;
+	background-color: white;
+	transition: 1s, ease-in-out;
+	color: black;
+	border: 2px solid black;
+    }
+	
+	#charge:hover .title span {
+    display: none;
+    }
+    
+    #charge:hover .title:after {
+        content: "2 Cents Per Mile";
+    }
+     
+    #image1 {
+        width: 80%;
+        height: 80%;
+        text-align: center;
+    }
+     
+    h3 {
+        text-align: center;
+        font-family: "Open Sans";
+    	font-size: 20px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 500;
+    	line-height: 20px; 
+    	margin-top: 20px; 
+    	padding: 30px;
+    }
+    
+    #container {
+        display: block;
+        margin: 0 auto;
+        padding-left: 30px;
+
+    }
+    
+    #emissions {
+        margin-left: 450px;
+    }
+    
+    #tesla {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tesla_Motors_Logo.svg/2000px-Tesla_Motors_Logo.svg.png" id="tesla">
+    
+    <h1 id="header">Electric vs Gasoline Cars Comparisons</h1>
+    <hr id="line"/>
+    
+    <h2>A comparison between Electric Vehicles like the Tesla Model S and regular gasoline cars</h2>
+    
+    <img src="https://www.tesla.com/tesla_theme/assets/img/savings-calculator/models_white_wall_2x.jpg" id="image1">
+    
+    <hr/>
+    <h3>Hover over each box to see the difference between fossil fuel powered cars and electrics cars:</h3>
+    <hr/>
+
+        <div id="container">
+            <div id="emissions" class="box">
+                <p class="title"><span>Greenhouse Gases & Pollution</span></p>
+            </div>
+    
+            <div id="range" class="box">
+                <p class="title"><span>OPEC</span></p>
+            </div>
+        
+            <div id="charge" class="box">
+                <p class="title"><span>12 cents+ per mile</span></p>
+            </div>
+        </div>
+        
+
+</body>
+</html>
