@@ -56,19 +56,6 @@
 			border-style: none none solid none;
 		}
 		/*------------------------------------------------------------------------------------------*/
-		.meals{
-			display:flex;
-			flex-direction:column;
-			/*align-items:flex-start;*/
-		}
-		.meal{
-			display:flex;
-			flex-direction:column;
-			background-color:white;
-			width:200px;
-			padding:15px;
-			margin:10px;
-		}
 		.meal img{
 			width:100%;
 			height:70%;
@@ -84,29 +71,38 @@
 		.meal-text p{
 			/*font-family: dosis;*/
 			font-size:17px;
+			text-align:justify;
+		}
+		.meal{
+			display:flex;
+			flex-direction:column;
+			background-color:white;
+			width:200px;
+			padding:15px;
+			margin:10px;
+		}
+		.meals{
+			display:flex;
+			flex-direction:column;
 		}
 		
 		/*------------------------------------------------------------------------------------------*/	
-		
     	#video-div{
-		    display: flex;
-		    width:100%;
-		    /*align-items:center;*/
 		    justify-content:center;
 		    overflow: hidden;
-		    /*max-height:400px;*/
-		    /*max-width:700px;*/
-		    /*align-items:baseline;*/
-		    
+		    max-height:400px;
+		    align-items:baseline;
 		}
 		#video-box{
 			opacity:.3;
 			width:100%;
+			margin-top:-100px;
 		}
 		
 		/*------------------------------------------------------------------------------------------*/					
+		/*------------------------------------------------------------------------------------------*/					
 		
-    	@media screen and (min-width: 700px){
+    	@media screen and (min-width: 1000px){
 	    	body{
 				background-size:cover;
 			}    
@@ -115,44 +111,43 @@
 				height:100px;
 				margin-top:0;
 				flex-direction:row;
-				justify-content:felx-start;
-				/*align-items:baseline;*/
-				/*height:700px;*/
 			}
 			a{
 				border:none;
 				font-size:24px;
-			}
-			
+			}	
+		/*------------------------------------------------------------------------------------------*/									
 			.meals{
-				flex-direction:row;
+				margin:0 auto;
+				max-width:1200px;
 				justify-content:space-around;
-				/*max-height:400px;*/
+				flex-direction:row;				
 			}
-			
 			.meal{
+				width:500px;
+				height:200px;
+				align-items:center; 
 				flex-direction:row;
-				width:800px;
-				margin-bottom:10px;
-				padding-bottom:15px;
+			}
+			.meal-text{
+				margin-left:20px;
+				height:200px;
 			}
 			.meal img{
-				max-width:50%;
-				max-height:80%;
+				width:200px;
+				height:200px;
 			}	
-			
-			.meal-text{
-				margin-left:40px;
-				/*max-height:100px;*/
-				/*max-width:60%;*/
-				/*width:300px;*/
-				/*width:500px;*/
-			}
-			
+		/*------------------------------------------------------------------------------------------*/					
+			/*#video-div{*/
+	
+			    
+			/*}*/
+			/*#video-box{*/
+	
+			/*}*/
 
     	}
 		</style>
-    <!------------------------------------------------------------------------------------------>	
     
     <body>
     	
@@ -181,7 +176,11 @@
 				<img src="Images/curry.jpg" alt="Curry Image">
 				<div class="meal-text">
 					<h2>Curry</h2>
-					<p>Delicious....</p>
+					<p>	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+					quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+					ut aliquip ex ea commodo consequat. </p>
 				</div>	
 			</div>	
 				
@@ -189,16 +188,20 @@
 				<img src="Images/spices.jpg" alt="Spices Image">
 				<div class="meal-text">
 					<h2>Spices</h2>
-					<p>Delicious....</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+					quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+					ut aliquip ex ea commodo consequat. </p>
 				</div>
 			</div>	
 		</section>
     <!------------------------------------------------------------------------------------------>	
-		<!--<section id="video-div">-->
-	 <!--   	<video id="video-box" loop muted autoplay>-->
-  <!--  	        <source src="Video/video.mp4"/>-->
-  <!--  	     </video> -->
-  <!--  	</section>-->
+		<section id="video-div">
+			<video id="video-box" loop muted autoplay>
+				<source src="Video/video.mp4"/>
+			</video> 
+		</section>
     <!------------------------------------------------------------------------------------------>	
     
     </body>

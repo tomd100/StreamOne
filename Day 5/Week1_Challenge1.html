@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Raj</title>
+		<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style type="text/css">
+		body{
+			background-image:url("Images/background2.jpg");
+			background-size:stretch;
+		}
+		/*------------------------------------------------------------------------------------------*/		
+		#top-bar{
+			display:flex;
+		}
+		#logo img{
+			margin:30px 0 0 30px;
+			width:150px;
+		}
+		#name{
+			margin-top:30px;
+			width:100%;
+			text-align:center;
+		}
+		#name h1{
+			/*font-family:;*/
+			font-size:40px;
+			color: #551a8b
+		}
+		/*------------------------------------------------------------------------------------------*/		
+		nav{
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			/*font-family: roboto;*/
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			border-radius: 10px;
+			padding: 0;	
+		}
+		a{
+			text-decoration: none;
+			color:#551a8b;
+			flex:1;
+			height: 30px;
+			/*font-family: Dosis;*/
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border:1px solid #551a8b;
+			border-style: none none solid none;
+		}
+		/*------------------------------------------------------------------------------------------*/
+		.meals{
+			display:flex;
+			flex-direction:column;
+			/*align-items:flex-start;*/
+		}
+		.meal{
+			display:flex;
+			flex-direction:column;
+			background-color:white;
+			width:200px;
+			padding:15px;
+			margin:10px;
+		}
+		.meal img{
+			width:100%;
+			height:70%;
+		}
+		.meal-text{
+			margin-top:20px;
+		}
+		.meal-text h2{
+			/*font-family: dosis;*/
+			font-size:19px;
+			margin-bottom:20px;
+		}
+		.meal-text p{
+			/*font-family: dosis;*/
+			font-size:17px;
+			text-align:justify;
+		}
+		
+		/*------------------------------------------------------------------------------------------*/	
+		
+    	#video-div{
+		    display: flex;
+		    /*width:100%;*/
+		    /*align-items:center;*/
+		    justify-content:center;
+		    overflow: hidden;
+		    max-height:400px;
+		    /*max-width:700px;*/
+		    /*align-items:baseline;*/
+		    
+		}
+		#video-box{
+			opacity:.3;
+			width:100%;
+		}
+		
+		/*------------------------------------------------------------------------------------------*/					
+		/*------------------------------------------------------------------------------------------*/					
+		
+    	@media screen and (min-width: 1000px){
+	    	body{
+				background-size:cover;
+			}    
+			nav{
+				max-width:1000px;
+				height:100px;
+				margin-top:0;
+				flex-direction:row;
+			}
+			a{
+				border:none;
+				font-size:24px;
+			}
+		/*------------------------------------------------------------------------------------------*/									
+			.meals{
+				/*flex-direction:row;*/
+				justify-content:space-around;
+				margin:0 auto;
+				max-width:1200px;
+			}
+			.meal{
+				flex-direction:row;
+				align-items:center; 
+				width:500px;
+				height:200px;
+			}
+			.meal img{
+				width:200px;
+				height:200px;
+			}	
+			.meal-text{
+				margin-left:20px;
+				height:200px;
+			}
+		/*------------------------------------------------------------------------------------------*/					
+			#video-div{
+	
+			    
+			}
+			#video-box{
+	
+			}
+
+    	}
+		</style>
+    
+    <body>
+    	
+    <!------------------------------------------------------------------------------------------>	    	
+    	<div id="top-bar">
+	    	<div id="logo">
+				<img src="Images/logo.png" alt="Indian Restaurant Logo">
+			</div>
+			
+			<div id="name">
+				<h1>Restaurant Name</h1>
+			</div>
+		</div>	
+    <!------------------------------------------------------------------------------------------>	
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Menus</a>
+			<a href="#">Opening Times</a>
+			<a href="#">Deliveries</a>
+			<a href="#">Reviews</a>
+			<a href="#">Contact</a>
+		</nav>
+    <!------------------------------------------------------------------------------------------>			
+		<section class="meals">
+			<div class="meal">
+				<img src="Images/curry.jpg" alt="Curry Image">
+				<div class="meal-text">
+					<h2>Curry</h2>
+					<p>	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+					quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+					ut aliquip ex ea commodo consequat. </p>
+				</div>	
+			</div>	
+				
+			<div class="meal">
+				<img src="Images/spices.jpg" alt="Spices Image">
+				<div class="meal-text">
+					<h2>Spices</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+					quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+					ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>	
+		</section>
+    <!------------------------------------------------------------------------------------------>	
+		<!--<section id="video-div">-->
+		<!--	<video id="video-box" loop muted autoplay>-->
+		<!--		<source src="Video/video.mp4"/>-->
+		<!--	</video> -->
+		<!--</section>-->
+    <!------------------------------------------------------------------------------------------>	
+    
+    </body>
+</html>
