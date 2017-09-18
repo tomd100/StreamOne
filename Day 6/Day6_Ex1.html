@@ -30,6 +30,7 @@
          :focus{
             background-color:pink;
          }
+		/*------------------------------------------------------------------------------------------*/		         
           legend{
             font-size: 30px;
             background-color: #fff;
@@ -37,6 +38,7 @@
             border: 1px solid #999;
             padding: 4px 15px;
          }
+		/*------------------------------------------------------------------------------------------*/		
          .field{
             display: block;
             text-align: right;
@@ -53,15 +55,7 @@
             border-radius: 5px;
             padding: 6px 8px;
          }
-         .checkbox{
-            margin-top:9px;
-            width:20px;
-         }
-         #currency{
-             width: 220px;
-             border-radius: 5px;
-             padding: 6px 8px;
-         }
+		/*------------------------------------------------------------------------------------------*/		         
          #meal-options{
             width:100%;
             margin:auto;
@@ -71,8 +65,52 @@
             height:5px;
          }
          #meal-options-choices{
-            text-align:center;
+            margin-left:120px;
+            text-align:left;
          }
+         .checkbox{
+            margin-top:9px;
+            width:20px;
+         }
+		/*------------------------------------------------------------------------------------------*/		         
+         #gender-options{
+            width:100%;
+            margin:auto;
+         }
+         #gender-options-title{
+            margin-left:50px;
+            height:5px;
+         }
+         #gender-options-choices{
+            margin-left:120px;
+            text-align:left;
+         }
+         .radio{
+            margin-top:9px;
+            width:20px;
+         }
+		/*------------------------------------------------------------------------------------------*/	
+		   #currency-options{
+		      width:300px;
+		      margin-left:40px;
+		   }
+		   #currency{
+             width: 120px;
+             border-radius: 5px;
+             padding: 6px 8px;
+             font-size:14px;
+         }
+		/*------------------------------------------------------------------------------------------*/			   
+		   #browser-options{
+		      width:300px;
+		      margin-left:40px;
+		   }
+         #browsers{
+            width: 120px;
+            /*border-radius: 5px;*/
+            /*padding: 6px 8px;*/
+         }
+		/*------------------------------------------------------------------------------------------*/			   
          #tel1{
             width:40px;
          }
@@ -115,9 +153,9 @@
 
                <label class="field" for="date">Date:</label>
                <input type="date" id="date" name="date" placeholder="Date:type" />
-
+   <!------------------------------------------------------------------------------------------>
                <br/>
-               
+   <!------------------------------------------------------------------------------------------>	               
                <div id="meal-options">
                   <p id="meal-options-title">Meal Options:</p>
                   
@@ -132,8 +170,52 @@
                      <input type="checkbox" class="checkbox" id="desert" name="desert" />
                   </div>
                </div>
+   <!------------------------------------------------------------------------------------------>	               
+               <div id="gender-options">
+                  <p id="gender-options-title">Gender:</p>
+                  
+                  <div id="gender-options-choices">
+                     <label class="field2" for="gender">Male:</label>
+                     <input type="radio" class="radio" id="gender" name="gender" />
+      
+                     <label class="field2" for="gender">Femail:</label>
+                     <input type="radio" class="radio" id="gender" name="gender" />
+                  </div>
+               </div>
+   <!------------------------------------------------------------------------------------------>	                              
+               <br/>
+   <!------------------------------------------------------------------------------------------>	               
+               <div id="currency-options">
+                  <label for="currency">Currency:</label>
+                  <select id="currency">
+                       <option value="euro">Euro</option> 
+                       <option value="dollar">Dollar</option>
+                       <option value="pound">Pound</option> 
+                       <option value="yen">Yen</option> 
+                       <option value="rupee">Rupee</option> 
+                       <option value="pesos">Pesos</option> 
+                       <option value="duckets">Duckets</option> 
+                       <option value="guilders">Guilders</option>   
+                  </select>
+               </div> 
+   <!------------------------------------------------------------------------------------------>               
+               <br/>
+   <!------------------------------------------------------------------------------------------>	   
+   
+               <!--<div id="browser-options">-->
+               <!--   <label>Browser: <input list="browsers" name="browser"></label>-->
+               <!--   <datalist id="browsers">-->
+               <!--      <option value="Internet Explorer">-->
+               <!--      <option value="Firefox">-->
+               <!--      <option value="Chrome">-->
+               <!--      <option value="Opera">-->
+               <!--   </datalist>-->
+               <!--</div>-->
+               
+   <!------------------------------------------------------------------------------------------>
+               
                <br/><br/>               
-
+               
                <label class="submit" for="submit"></label>
                <input type="submit" id="submit" value="submit"/>
                
