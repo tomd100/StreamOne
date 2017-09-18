@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+         }
+         :focus{
+            background-color:pink;
+         }
+          legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+         .field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear:both;
+            padding: 6px 8px;
+         }
+         .field2{
+            /*margin-left:0px;*/
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .checkbox{
+            margin-top:9px;
+            width:20px;
+         }
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+         #meal-options{
+            width:100%;
+            margin:auto;
+         }
+         #meal-options-title{
+            margin-left:10px;
+            height:5px;
+         }
+         #meal-options-choices{
+            text-align:center;
+         }
+         #tel1{
+            width:40px;
+         }
+         #tel2{
+            width:135px;
+         }
+           #submit{
+               width:100px;  
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <form id="UserRegForm" action="" method="">
+            <fieldset><legend>Registration</legend>
+            
+               <label class="field" for="fname">First name:</label>
+               <input type="text" id="fname" name="fname" placeholder="First Name" />
+               
+               <label class="field" for="sname">Surname:</label>
+               <input type="text" id="sname" name="sname" placeholder="Last Name"/>
+               
+               <label class="field" for="password">Password:</label>
+               <input type="password" id="password" name="password" placeholder="Password"/>
+
+               <label class="field" for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Email"/>
+
+               <label class="field" for="email">Website:</label>
+               <input type="website" id="email" name="website" placeholder="website"/>
+
+               <br/>
+               
+               <label class="field" for="tel">Mobile:</label>
+               <input type="tel" id="tel1" name="tel1" placeholder="Prefix:"
+                  pattern="08[3679]"/>
+               
+               <input type="tel" id="tel2" name="tel2" placeholder="Tel:" 
+                  pattern="\d{7}"/>
+
+               <label class="field" for="date">Date:</label>
+               <input type="date" id="date" name="date" placeholder="Date:type" />
+
+               <br/>
+               
+               <div id="meal-options">
+                  <p id="meal-options-title">Meal Options:</p>
+                  
+                  <div id="meal-options-choices">
+                     <label class="field2" for="starter">Starter:</label>
+                     <input type="checkbox" class="checkbox" id="starter" name="starter" />
+      
+                     <label class="field2" for="main">Main:</label>
+                     <input type="checkbox" class="checkbox" id="main" name="main" />
+      
+                     <label class="field2" for="main">Desert:</label>
+                     <input type="checkbox" class="checkbox" id="desert" name="desert" />
+                  </div>
+               </div>
+               <br/><br/>               
+
+               <label class="submit" for="submit"></label>
+               <input type="submit" id="submit" value="submit"/>
+               
+            </fieldset>
+         </form>
+    </div>
+   </body>
+
+</html>
