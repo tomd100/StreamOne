@@ -105,11 +105,7 @@
 		      width:300px;
 		      margin-left:40px;
 		   }
-         #browsers{
-            width: 120px;
-            /*border-radius: 5px;*/
-            /*padding: 6px 8px;*/
-         }
+
 		/*------------------------------------------------------------------------------------------*/			   
          #tel1{
             width:40px;
@@ -124,7 +120,7 @@
    </head>
    <body>
       <div id="container">
-         <form id="UserRegForm" action="" method="">
+         <form id="UserRegForm" >
             <fieldset><legend>Registration</legend>
             
                <label class="field" for="fname">First name:</label>
@@ -140,11 +136,11 @@
                <input type="email" id="email" name="email" placeholder="Email"/>
 
                <label class="field" for="email">Website:</label>
-               <input type="website" id="email" name="website" placeholder="website"/>
+               <input type="url" id="website" name="website" placeholder="website"/>
 
                <br/>
                
-               <label class="field" for="tel">Mobile:</label>
+               <label class="field" for="tel1">Mobile:</label>
                <input type="tel" id="tel1" name="tel1" placeholder="Prefix:"
                   pattern="08[3679]"/>
                
@@ -152,7 +148,7 @@
                   pattern="\d{7}"/>
 
                <label class="field" for="date">Date:</label>
-               <input type="date" id="date" name="date" placeholder="Date:type" />
+               <input type="date" id="date" name="date" />
    <!------------------------------------------------------------------------------------------>
                <br/>
    <!------------------------------------------------------------------------------------------>	               
@@ -175,11 +171,11 @@
                   <p id="gender-options-title">Gender:</p>
                   
                   <div id="gender-options-choices">
-                     <label class="field2" for="gender">Male:</label>
-                     <input type="radio" class="radio" id="gender" name="gender" />
+                     <label class="field2" for="mail">Male:</label>
+                     <input type="radio" class="radio" id="mail" name="gender" />
       
-                     <label class="field2" for="gender">Femail:</label>
-                     <input type="radio" class="radio" id="gender" name="gender" />
+                     <label class="field2" for="femail">Femail:</label>
+                     <input type="radio" class="radio" id="femail" name="gender" />
                   </div>
                </div>
    <!------------------------------------------------------------------------------------------>	                              
@@ -202,15 +198,15 @@
                <br/>
    <!------------------------------------------------------------------------------------------>	   
    
-               <!--<div id="browser-options">-->
-               <!--   <label>Browser: <input list="browsers" name="browser"></label>-->
-               <!--   <datalist id="browsers">-->
-               <!--      <option value="Internet Explorer">-->
-               <!--      <option value="Firefox">-->
-               <!--      <option value="Chrome">-->
-               <!--      <option value="Opera">-->
-               <!--   </datalist>-->
-               <!--</div>-->
+               <div id="browser-options">
+                  <label>Browser: <input list="browsers" name="browser"></label>
+                  <datalist id="browsers">
+                     <option value="Internet Explorer">
+                     <option value="Firefox">
+                     <option value="Chrome">
+                     <option value="Opera">
+                  </datalist>
+               </div>
                
    <!------------------------------------------------------------------------------------------>
                
