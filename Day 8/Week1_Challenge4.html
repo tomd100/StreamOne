@@ -12,7 +12,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Allura|Berkshire+Swash|Crimson+Text:400i|Fondamento|Merienda+One|Parisienne|Princess+Sofia|Raleway:500|Tangerine" rel="stylesheet">
 	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css"/>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 	</head>
@@ -50,7 +51,7 @@
 			font-family: 'Tangerine', cursive;
 		}
 		#Nav a:hover{
-			text-decoration: underline;
+			/*text-decoration: underline;*/
 		}
 		/*------------------------------------------------------------------------------------------*/
 		.second-row-border{
@@ -62,6 +63,13 @@
 			/*color:white;*/
 			font-size:15px;
 			font-family: 'Raleway', sans-serif, bold;
+		}
+		.images{
+			border:solid 3px white;
+		}
+		#image1{
+			margin: auto auto;
+			max-width:300px;
 		}
 		/*------------------------------------------------------------------------------------------*/		
 	</style>
@@ -87,13 +95,13 @@
 						<span class="icon-bar"></span>
 	            	</button>
 	                <ul  id="nav-collapse" class="nav navbar-nav navbar-right collapse navbar-collapse">
-	                    <li><a href="#">Home</a></li>
-	                    <li><a href="#">Menus</a></li>
-	                    <li><a href="#">Opening Times</a></li>
-	                    <li><a href="#">Make a Booking</a></li>
-	                    <li><a href="#">Deliveries</a></li>
-	                    <li><a href="#">Reviews</a></li>
-	                    <li><a href="#">Contact</a></li>
+	                    <li><a href="#" class="hvr-grow">Home</a></li>
+	                    <li><a href="#" class="hvr-grow">Menus</a></li>
+	                    <li><a href="#" class="hvr-grow">Opening Times</a></li>
+	                    <li><a href="#" class="hvr-grow">Make a Booking</a></li>
+	                    <li><a href="#" class="hvr-grow">Deliveries</a></li>
+	                    <li><a href="#" class="hvr-grow">Reviews</a></li>
+	                    <li><a href="#" class="hvr-grow">Contact</a></li>
 	                </ul>
 	            </nav>
 	            
@@ -109,7 +117,7 @@
 
 					<div class="col-sm-6">
 						<div class="second-row-border second-row-text">
-		                    <h1>Title </h1>
+		                    <h1>Authentic Indian Cuisine</h1>
 		                    <p>
 		                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 		                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -126,11 +134,10 @@
 	                
 					<div class="col-sm-6">
 						<div class="second-row-border second-row-text">
-		                    <h1>Title</h1>
-		                    <p>
-		                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-		                    
-		                    </p>
+		                    <h1>Delicious Curry</h1>
+		                    <div class="images" id="image1">
+		                    	<img id="image1" src="../Images/curry.jpg" alt="Photo of curry plate">
+		                    </div>
 	                </div>
 	                </div>
 	                
